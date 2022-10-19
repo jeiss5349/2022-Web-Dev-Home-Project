@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -16,4 +18,5 @@
     "url": "https://github.com/jeiss5349/2022-Web-Dev-Home-Project/issues"
   },
   "homepage": "https://github.com/jeiss5349/2022-Web-Dev-Home-Project#readme"
+  
 }
