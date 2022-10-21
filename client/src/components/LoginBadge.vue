@@ -3,14 +3,27 @@
 </script>
 
 <template>
-    <div class="buttons" v-if="session.user == null">
+     <div class="navbar-item has-dropdown is-hoverable" v-if="session.user == null">
+              <a class="navbar-link">
+                Login
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item button is-light" @click="login('Jeiss', 'Varghese', true)">
+                  Jeiss Varghese
+                </a>
+                <a class="navbar-item button is-light" @click="login('John', 'Doe', false)">
+                  John Doe
+                </a>
+                <a class="navbar-item button is-light" @click="login('John', 'Smith', false)">
+                  John Smite
+                </a>
+              </div>
+  
         <a class="button is-primary">
             <strong>Sign up</strong>
         </a>
-        <a class="button is-light" @click="login('Moshe', 'Plotkin')">
-            Log in
-        </a>
-    </div>
+      </div>
     <div v-else>
         Welcome {{session.user.firstName}} {{session.user.lastName}}
         (<a @click="logout()">
