@@ -12,11 +12,11 @@
                 <a class="navbar-item button is-light" @click="login('Jeiss', 'Varghese', true)">
                   Jeiss Varghese
                 </a>
-                <a class="navbar-item button is-light" @click="login('John', 'Doe', false)">
-                  John Doe
+                <a class="navbar-item button is-light" @click="login('Michael', 'Phelps', false)">
+                  Michael Phelps
                 </a>
-                <a class="navbar-item button is-light" @click="login('John', 'Smith', false)">
-                  John Smite
+                <a class="navbar-item button is-light" @click="login('Serena', 'Williams', false)">
+                  Serena Williams
                 </a>
               </div>
   
