@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
+    "build": "npm i -ws && npm run build -ws",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
+  "workspaces": [
+    "client"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeiss5349/2022-Web-Dev-Home-Project.git"
